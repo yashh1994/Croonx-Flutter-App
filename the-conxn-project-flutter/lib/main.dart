@@ -15,10 +15,10 @@ class MyApp extends StatelessWidget {
     bool isDarkMode = false;
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: lightTheme,
+      theme: darkTheme,
       darkTheme: darkTheme,
       home: Buddysystem(
-        
+
       ),
     );
   }

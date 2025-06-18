@@ -4,8 +4,10 @@ final ThemeData darkTheme = ThemeData(
   primaryColor: Color(0xFFD95D39),
   scaffoldBackgroundColor: Color(0xFF1F2631),
   dialogBackgroundColor: Color(0xFF484E57),
+  secondaryHeaderColor: Color(0xFFFFFFFF),
   textTheme: TextTheme(
-    bodyLarge: TextStyle(color: Color(0xFFFFFFFF)),
+    bodyLarge: TextStyle(color: Color(0xFFFFFFFF),fontSize: 18,fontWeight: FontWeight.w600),
+    bodyMedium: TextStyle(color: Color(0xFFFFFFFF),fontSize: 18,fontFamily: "Inter")
   ),
   colorScheme: const ColorScheme.light(
     primary: Colors.blue,
