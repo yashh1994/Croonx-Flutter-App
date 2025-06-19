@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:the_conxn_project_flutter/Buddy%20System/BuddySystem.dart';
+import 'package:the_conxn_project_flutter/Mentoring/Mentoring.dart';
 import 'package:the_conxn_project_flutter/Theme.dart';
 
 void main() {
@@ -15,11 +16,9 @@ class MyApp extends StatelessWidget {
     bool isDarkMode = false;
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: darkTheme,
+      theme: lightTheme,
       darkTheme: darkTheme,
-      home: Buddysystem(
-
-      ),
+      home: Buddysystem()
     );
   }
 }
