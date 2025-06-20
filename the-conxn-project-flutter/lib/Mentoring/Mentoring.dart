@@ -60,14 +60,18 @@ class _MentoringState extends State<Mentoring> {
       child: Column(
         mainAxisSize: MainAxisSize.max,
         children: [
-          Row(
-            children: [
-              Icon(Icons.arrow_back_ios, color: theme.secondaryHeaderColor,),
-              Text("Mentoring", style: theme.textTheme.bodyLarge),
-            ],
+          GestureDetector(
+            onTap: ()=>Navigator.pop(context),
+            child: Row(
+              children: [
+                Icon(Icons.arrow_back_sharp, color: theme.secondaryHeaderColor,size: 18,),
+                SizedBox(width: 4,),
+                Text("Mentoring", style: theme.textTheme.bodyLarge),
+              ],
+            ),
           ),
           SizedBox(height: 24),
-          Divider(height: 1, color: Colors.grey.shade200),
+          Divider(height: 1, color: theme.brightness == Brightness.dark ? darkDivider : lightDivider),
           Expanded(
             child:
                 _isLoading

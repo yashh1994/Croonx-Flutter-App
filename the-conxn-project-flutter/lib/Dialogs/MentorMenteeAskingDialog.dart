@@ -80,7 +80,10 @@ class _MentorMenteeAskingDialogContentState
                 child:  ElevatedButton(
                     style: primaryFillButton,
                     onPressed: (){
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => Mentoring(),));
+                      Navigator.pop(context); // Close the bottom drawer
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => const Mentoring()),);
                     }, child: Text(
                   "Join the Mentor Program",
                   style: smallPrimaryTextStyle,

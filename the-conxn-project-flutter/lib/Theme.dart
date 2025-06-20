@@ -24,11 +24,14 @@ final ThemeData darkTheme = ThemeData(
       letterSpacing: 0,
     ),
   ),
-  colorScheme: const ColorScheme.light(
+  colorScheme: const ColorScheme.dark(
     primary: Colors.blue,
     secondary: Colors.blueAccent,
   ),
 );
+
+final darkDivider = Color(0xFF575C64);
+final lightDivider = Color(0xFFE6E6E6);
 
 final ThemeData lightTheme = ThemeData(
   primaryColor: Color(0xFFD95D39),
